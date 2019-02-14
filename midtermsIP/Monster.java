@@ -7,12 +7,14 @@ public class Monster{
 	
 	public int xPos = 150;
 	public int yPos = 300;
-	
+	public int width = 0;
+	public int height = 0;
+
 	public BufferedImage image;
 	public URL resource = getClass().getResource("slime/idle0.png");
 
 
-	public Monster(){
+	public Monster(Draw comp){
 		try{
 			image = ImageIO.read(resource);
 		}
